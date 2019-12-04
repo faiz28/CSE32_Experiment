@@ -10,6 +10,12 @@ public class FileClient {
 			String str;
 			str = br.readLine();
 			dout.writeUTF(str);
+
+			File file=new File(str);
+			long file_size=(long) file.length() ;
+			String siz=String.valueOf(file_size);
+			dout.writeUTF(siz);
+
 			dout.flush();
 			FileInputStream fos = new FileInputStream(str);
 			byte [] buffer = new byte[4096];
