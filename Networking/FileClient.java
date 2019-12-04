@@ -1,36 +1,27 @@
-import java.io.DataOutputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.net.Socket;
+import java.io.*;
+import java.net.*;
 
 public class FileClient {
-	
-	private Socket s;
-	
-	public FileClient(String host, int port, String file) {
+	public static void main(String[] arg) {
 		try {
-			s = new Socket(host, port);
-			sendFile(file);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}		
-	}
-	
-	public void sendFile(String file) throws IOException {
-		DataOutputStream dos = new DataOutputStream(s.getOutputStream());
-		FileInputStream fis = new FileInputStream(file);
-		byte[] buffer = new byte[4096];
-		
-		while (fis.read(buffer) > 0) {
-			dos.write(buffer);
+			Socket socket = new Socket("localhost",2343);
+			DataOutputStream dout = new DataOutputStream(socket.getOutputStream());
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			String str;
+			str = br.readLine();
+			dout.writeUTF(str);
+			dout.flush();
+			FileInputStream fos = new FileInputStream(str);
+			byte [] buffer = new byte[4096];
+			
+			while(fos.read(buffer)>0) {
+				dout.write(buffer);
+			}
+			
+			dout.close();
+			socket.close();
+		}catch(Exception ex) {
+			System.out.println(ex);
 		}
-		
-		fis.close();
-		dos.close();	
 	}
-	
-	public static void main(String[] args) {
-        FileClient fc = new FileClient("localhost", 1988, "client.txt");
-	}
-
 }
