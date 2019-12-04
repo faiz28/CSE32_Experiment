@@ -9,14 +9,17 @@ public class FileServer {
 			Socket socket = server.accept();
 			DataInputStream din = new DataInputStream(socket.getInputStream());
 			
-			String str;
+			String str,size;
 			str = (String)din.readUTF();
-			System.out.println("Receaving " + str);
+			System.out.println("File  name " + str);
+
+			size=(String)din.readUTF();
+			System.out.println("\n File size " + size);
 			
 			FileOutputStream fos = new FileOutputStream(str);
 			byte [] buffer = new byte[4096];
 			
-			int filesize = 1000000000;
+			int filesize = Integer.parseInt(size) *8;
 			int read=0;
 			int totalRead = 0;
 			int remaining = filesize;
