@@ -36,7 +36,7 @@ void cohenSuterlandLineCliping(double x1,double y1,double x2,double y2)
             int code_out;
             double x,y;
 
-            if(code_out!=0) code_out=code1;
+            if(code1!=0) code_out=code1;
             else code_out=code2;
 
             if(code_out & TOP)
