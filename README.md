@@ -1,8 +1,4 @@
 # 3rd Year 2nd Semester Lab Codes
-### Here I try to upload all of my Lab codes. 
-## Software Engineering Lab Task
-
-
 
 ## Graphics 
 ![Graphics work List](https://github.com/SohanCSERU/3Y2S/blob/master/Images/Graphics.PNG)
