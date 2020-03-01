@@ -4,7 +4,7 @@
 
 1.  [Drawing Composition ](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Computer%20Graphics/DrawingComposition.c)
 2. [Random Line Drawing](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Computer%20Graphics/random%20line.c)
-3. [Bresenham Line Drawing Algo](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Computer%20Graphics/bresenhumline.c)
+3. [Bresenham Line Drawing Algo](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Computer%20Graphics/bresenhum_line_drawing.c)
 4. [Mid-Point Circle Drawing Algo](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Computer%20Graphics/circleDrawing.c)
 5. [Cohen- SuterLand Line Clip Algo](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Computer%20Graphics/cohenSutherlandLineClipping.c) 
 6. [Object Drawing](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Computer%20Graphics/DrawingObject.c)
