@@ -11,29 +11,30 @@ MAIN PROC
     MOV DS,AX
     
     PRINT "TAKE INPUT FROM 0 TO 9"
-    MOV AH,1
+    MOV AH,1  ;String Input
     INT 21H
     
-    SUB AL,'0'
+    SUB AL,'0' ;char to digit convert
     MOV N,AL
     MOV DIVISOR,AL
     
     CMP AL,1
-    JLE NOT_PRIME
+    JLE NOT_PRIME   ;if less then equal 1 not prime
     
     DEC DIVISOR
+
     
     FOR:
-        MOV AH,0
+        MOV AH,0  
         CMP DIVISOR,1
         JE PRIME
         
-        DIV DIVISOR
+        DIV DIVISOR  ; AL/DIVISOR then AL contine quotient and AH contine remainder
         
         CMP AH,0
-        JE NOT_PRIME
+        JE NOT_PRIME  ;if remainder==0 then not prime
         
-        MOV AL,N
+        MOV AL,N      ;update AL register to N 
         DEC DIVISOR
         
         JMP FOR
