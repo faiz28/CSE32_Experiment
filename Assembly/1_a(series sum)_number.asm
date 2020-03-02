@@ -19,7 +19,7 @@ MAIN PROC
     ;LOOP 
     SUB AL,'0' ;Character to decimal
     MOV CL,AL  ;counter register set value
-    XOR AL,AL  ;set AL register
+    MOV AL,0  
     L1:      
        ADD AL,CL
        DEC CL   
