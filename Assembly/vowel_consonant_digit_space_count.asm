@@ -53,6 +53,16 @@ READ:
             CMP AL,'O'
             JE VOWEL_C
             CMP AL,'U'
+            JE VOWEL_C  
+             CMP AL,'a'
+            JE VOWEL_C 
+            CMP AL,'e'
+            JE VOWEL_C
+            CMP AL,'i'
+            JE VOWEL_C 
+            CMP AL,'o'
+            JE VOWEL_C
+            CMP AL,'u'
             JE VOWEL_C 
             
             INC CONSONANT
