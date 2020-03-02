@@ -12,7 +12,6 @@ MAIN PROC
     MOV DS,AX
         
     MOV SI,500
-    MOV N,0
     MOV SIZE,0 
     
     PRINT "TAKE STRING INPUT : "
@@ -20,7 +19,7 @@ MAIN PROC
     READ:
         MOV AH,1
         INT 21H
-        CMP AL,13
+        CMP AL,13  ;Untile newline  enter
         JE OUTPUT
         
         MOV MSG[SI],AL
@@ -55,8 +54,4 @@ MAIN PROC
         RET
     NEWLINE ENDP
 END MAIN
-            
-        
-        
-        
         
