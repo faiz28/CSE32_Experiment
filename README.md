@@ -20,7 +20,7 @@
 5. [Even Odd Check](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Assembly/even_odd.asm)
 6. [Prime Number Check](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Assembly/prime_number_check.asm)
 7. [Vowel consonant digit space count](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Assembly/vowel_consonant_digit_space_count.asm)
-8.[ascending decending order sort](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Assembly/ascending_descending%20order_sort.asm)
+8. [ascending decending order sort](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Assembly/ascending_descending%20order_sort.asm)
 ```
 ```
 ## Operating System Lab Task
