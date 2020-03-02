@@ -30,13 +30,7 @@ MAIN PROC
 IFZERO:
     ADD AL,'0' ;decimal to character
     MOV RESULT,AL
-       
-    ;new line print
-    MOV AH,02H
-    MOV DL,10
-    INT 21H
-    MOV DL,13
-    INT 21H
+    CALL NEWLINE
     
     ;OUTPUT
     PRINT "FACTORIAL SUM : " 
@@ -44,9 +38,18 @@ IFZERO:
     MOV DL,RESULT
     MOV AH,2
     INT 21H
-    
-    
+
     MOV AX,4CH
     INT 21H
-MAIN ENDP
+MAIN ENDP   
+
+NEWLINE PROC 
+    MOV AH,2
+    MOV DL,10
+    INT 21H
+    MOV DL,13
+    INT 21H  
+    RET
+NEWLINE ENDP       
+
 END MAIN
