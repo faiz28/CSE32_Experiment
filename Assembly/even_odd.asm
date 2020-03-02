@@ -12,7 +12,7 @@ MAIN PROC
     
     PRINT "TAKE INPUT NUMBER FROM 0 TO 9 : "
     
-    MOV AL,1
+    MOV AH,1
     INT 21H
     
     MOV STORE,AL  ;STORE INPUT VALUE 
@@ -21,10 +21,6 @@ MAIN PROC
     AND AL,1
     MOV RESULT,AL 
     
-    ;PRINT INPUT NUMBER
-    MOV DL,STORE
-    MOV AH,2
-    INT 21H
     
     ;NEWLINE
     MOV AH,2
