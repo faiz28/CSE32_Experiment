@@ -26,6 +26,7 @@
 ## Operating System Lab Task
 1. [Dedlock Detection](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/dedlock_detection.cpp)
 2. [Banker Algorithm](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/banker_algorithm.cpp)
+3. [FIFO Algorithm]
 ```
 ```
 ## Networking Lab Task
