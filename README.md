@@ -37,5 +37,7 @@
 ```
 ```
 ## Networking Lab Task
-![Network Lab list]
+[Socket Programming - Sending Text]
+[Socket Programming - Sending File]
+[Socket Programming - Sending Mail]
 
