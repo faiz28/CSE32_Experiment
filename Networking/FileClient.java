@@ -17,10 +17,10 @@ public class FileClient {
 			dout.writeUTF(siz);
 
 			dout.flush();
-			FileInputStream fos = new FileInputStream(str);
+			FileInputStream fis = new FileInputStream(str);
 			byte [] buffer = new byte[4096];
 			
-			while(fos.read(buffer)>0) {
+			while(fis.read(buffer)>0) {
 				dout.write(buffer);
 			}
 			
