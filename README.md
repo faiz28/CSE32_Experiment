@@ -24,9 +24,16 @@
 ```
 ```
 ## Operating System Lab Task
-1. [Dedlock Detection](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/dedlock_detection.cpp)
-2. [Banker Algorithm](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/banker_algorithm.cpp)
-3. [FIFO Algorithm](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/FIFO_Algorithm.cpp)
+**Scheduling ALgorithm**
+ 1. [First come First Serve(FCFS)](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/FIrstComeFirstServe(FCFS).cpp)
+ 2. [Shortest job first(SJF)_Non Preemtive](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/SJF_nonpreemtive.cpp)
+ 3. [Priority scheduling algorithm](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/Priority_scheduling_algorithm.cpp)
+ 4. [Round Robin algorithm](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/round%20robin.cpp)
+ 5. [Dedlock Detection](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/dedlock_detection.cpp)
+ 6. [Banker Algorithm](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/banker_algorithm.cpp)
+ 7. [FIFO PageFault Algorithm](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/FIFO_Algorithm.cpp)
+ 8. [LRU pagefault Algorithm](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/LRU(Least%20Recently%20used).cpp)
+ 9. [Resouce Request Algorithm](https://github.com/faiz28/CSE3Y2S_Experiment/blob/master/Operating_system/ResourceRequest.cpp)
 ```
 ```
 ## Networking Lab Task
